@@ -4,7 +4,7 @@ set "file=data.txt"
 set LIB_DIR=D:\Dev\Projects\Github\maven\external_library\lib
 
 for /f "usebackq tokens=1-4 delims=," %%a in ("%file%") do (
-	echo echo ^<ESC^>[102m [102mGreen[0m: filename=%%a, groupId=%%b, artifactId=%%c, version=%%d
+	echo [FILE INFO]: filename=%%a, groupId=%%b, artifactId=%%c, version=%%d
 	echo.
 	call mvn install:install-file ^
 		-Dfile=%LIB_DIR%\%%a ^
