@@ -19,6 +19,7 @@ for /f "usebackq tokens=1-4 delims=," %%a in ("%INPUT_FILE%") do (
 	) else (
 		REM File infomation
 		echo [INFO] Install jar for 'filename=%%a, groupId=%%b, artifactId=%%c, version=%%d'
+		
 		call mvn install:install-file ^
 			-Dfile=%LIB_DIR%\%%a ^
 			-DgroupId=%%b ^
@@ -28,6 +29,7 @@ for /f "usebackq tokens=1-4 delims=," %%a in ("%INPUT_FILE%") do (
 			-Durl=file:./lib/ ^
 			-DrepositoryId=lib ^
 			-DupdateReleaseInfo=true
+			
 		REM Create dependency
 		echo [INFO] Create dependency
 		(
@@ -40,5 +42,5 @@ for /f "usebackq tokens=1-4 delims=," %%a in ("%INPUT_FILE%") do (
 	)
 )
 
-timeout /t 30 /nobreak
+timeout /t 10 /nobreak
 exit
