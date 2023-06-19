@@ -1,0 +1,10 @@
+<dependency>
+    <groupId>external.lib</groupId>
+    <artifactId>my-commons-io</artifactId>
+    <version>2.11</version>
+</dependency>
+<dependency>
+    <groupId>external.lib</groupId>
+    <artifactId>my-commons-lang3</artifactId>
+    <version>3.9</version>
+</dependency>
