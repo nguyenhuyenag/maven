@@ -1,3 +1,4 @@
 commons-io-2.11.jar,external.lib,my-commons-io,2.11
 commons-lang3-3.9.jar,external.lib,my-commons-lang3,3.9
 commons-io-2.19.jar,external.lib.jzen,my-commons-ii,2.11
+chilkat-9.5.0.jar,com.chilkatsoft,chilkat,9.5.0

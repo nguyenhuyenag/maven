@@ -8,3 +8,8 @@
     <artifactId>my-commons-lang3</artifactId>
     <version>3.9</version>
 </dependency>
+<dependency>
+    <groupId>com.chilkatsoft</groupId>
+    <artifactId>chilkat</artifactId>
+    <version>9.5.0</version>
+</dependency>
