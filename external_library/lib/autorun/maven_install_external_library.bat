@@ -30,7 +30,7 @@ for /f "usebackq tokens=1-4 delims=," %%a in ("%INPUT_FILE%") do (
 			-DrepositoryId=lib ^
 			-DupdateReleaseInfo=true
 			
-		REM Create dependency
+		REM Create POM dependency
 		echo [INFO] Create dependency
 		(
 			echo ^<dependency^>
@@ -42,5 +42,5 @@ for /f "usebackq tokens=1-4 delims=," %%a in ("%INPUT_FILE%") do (
 	)
 )
 
-timeout /t 10 /nobreak
+timeout /t 5 /nobreak
 exit
